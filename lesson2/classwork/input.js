@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 
-// promt always returns a string
+ //promt always returns a string
 let input = prompt("Gimme a number:");
 console.log(input);
 
