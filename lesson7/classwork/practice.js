@@ -1,5 +1,6 @@
 // Problem 1
 // Find and print the total sum of all the numbers in the list.
+let nums = [6, -20, 8, 28, 19, -2, 38, -10, -19, 15]
 
 
 
