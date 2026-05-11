@@ -1,11 +1,13 @@
 // Problem 1
 // Write a function that returns your favorite fruit and print it.
-
+function favefruit() {
+    
+}
 
 
 // Problem 2
 // Write a function that returns a smiley face and print it.
-
+console.log(":)");
 
 
 // Problem 3
