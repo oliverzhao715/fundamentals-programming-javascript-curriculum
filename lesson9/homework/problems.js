@@ -1,17 +1,32 @@
+
 // Problem 1
 // Use a while loop to print the word "JavaScript" 4 times.
-
+let j = 0;
+while (j < 4) {
+    console.log("JavaScript")
+    j = j + 1;
+}
 
 
 // Problem 2
 // Use a while loop to print the even numbers from 2 to 12 (inclusive).
-
+let j2 = 2;
+while (j2 < 14) {
+    console.log(j2)
+    j2 = j2 + 2;
+}
 
 
 // Problem 3
 // Ask the user to input a positive number.
 // Use a while loop to count up from 0 to that number (inclusive), printing each number.
-
+const prompt = require("prompt-sync")();
+let input = prompt
+let j3 = 0;
+while (j2 < ) {
+    console.log(j2)
+    j2 = j2 + 2;
+}
 
 
 // Problem 4
