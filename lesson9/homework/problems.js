@@ -21,11 +21,11 @@ while (j2 < 14) {
 // Ask the user to input a positive number.
 // Use a while loop to count up from 0 to that number (inclusive), printing each number.
 const prompt = require("prompt-sync")();
-let input = prompt
+let input2 = prompt("Give me a number:")
 let j3 = 0;
-while (j3 < ) {
-    console.log(j2)
-    j2 = j2 + 2;
+while (j3 < input2) {
+    console.log(j3)
+    j3 = j3 + 2;
 }
 
 
