@@ -23,7 +23,7 @@ while (j2 < 14) {
 const prompt = require("prompt-sync")();
 let input = prompt
 let j3 = 0;
-while (j2 < ) {
+while (j3 < ) {
     console.log(j2)
     j2 = j2 + 2;
 }
