@@ -32,6 +32,24 @@ while (j2 < ) {
 // Problem 4
 // Ask the user to enter a starting number greater than 10.
 // Use a while loop to count down by 5 each time until the number is less than 0.
+// core game logic for a text-input shooter
+const input = document.getElementById('game-input');
+const target = { word: "FIRE", active: true };
+
+input.addEventListener('keyup', (e) => {
+    // Check if the user typed the target word and pressed Enter
+    if (e.key === "Enter") {
+        if (input.value.toUpperCase() === target.word) {
+            shootTarget();
+            input.value = ''; // clear input after shot
+        }
+    }
+});
+
+function shootTarget() {
+    console.log("Target destroyed!");
+    // logic to remove target from screen and add score
+}
 
 
 
