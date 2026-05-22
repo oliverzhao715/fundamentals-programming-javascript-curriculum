@@ -32,27 +32,36 @@ while (j3 < input2) {
 // Problem 4
 // Ask the user to enter a starting number greater than 10.
 // Use a while loop to count down by 5 each time until the number is less than 0.
-// core game logic for a text-input shooter
-const input = document.getElementById('game-input');
-const target = { word: "FIRE", active: true };
+// Ask the user to enter a starting number greater than 10
+const prompt2 = require("prompt-sync")();
+let input3 = prompt("Give me a number:")
+let input4 = prompt("Enter a starting number greater than 10:");
+let number = parseInt(input4, 10);
 
-input.addEventListener('keyup', (e) => {
-    // Check if the user typed the target word and pressed Enter
-    if (e.key === "Enter") {
-        if (input.value.toUpperCase() === target.word) {
-            shootTarget();
-            input.value = ''; // clear input after shot
-        }
-    }
-});
-
-function shootTarget() {
-    console.log("Target destroyed!");
-    // logic to remove target from screen and add score
+// Ensure the user actually entered a number greater than 10
+while (isNaN(number) || number <= 10) {
+    input = prompt("Invalid input. Please enter a number GREATER than 10:");
+    number = parseInt(input4, 10);
 }
 
+// Use a while loop to count down by 5 each time until the number is less than 0
+while (number >= 0) {
+    console.log(number);
+    number -= 5;
+}
 
 
 // Problem 5
 // Create a list of your three favorite animals.
 // Use a while loop to print each animal with the text "is awesome!" after it.
+// Create a list of your three favorite animals
+const favoriteAnimals = ["Capybara", "Red Panda", "Orca"];
+
+// Initialize a counter to track the current index in the list
+let index = 0;
+
+// Use a while loop to print each animal with the text "is awesome!" after it
+while (index < favoriteAnimals.length) {
+    console.log(`${favoriteAnimals[index]} is awesome!`);
+    index++; // Move to the next animal in the list
+}
